@@ -1,0 +1,79 @@
+html , body {
+    width: 100%; 
+    height: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    width: 60%;
+    height: 85%;
+    background-color: #699999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-clip-path{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+}
+
+.div-clip-path-left{
+    background-color: #205B63;
+    clip-path: polygon(0 0, 53% 0, 44% 100%, 0 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+  
+}
+
+.div-clip-path-right{
+    background-color: #FEBA33;
+    clip-path: polygon(48% 0, 100% 0, 100% 100%, 28% 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+img{
+    width: 35%;
+    height:60%;
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+
+.shadow{
+    position: absolute;
+    background-color: wheat;
+    width: 100%;
+    height: 100%;
+    right: 5rem;
+    clip-path: polygon(0 0, 31% 21%, 30% 70%, 0 100%);
+    z-index: 3;
+    opacity: 15%;
+    margin-right: 0.8rem;
+    
+}
