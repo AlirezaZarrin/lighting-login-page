@@ -53,8 +53,9 @@ main{
     clip-path: polygon(48% 0, 100% 0, 100% 100%, 28% 100%);
     width: 100%;
     height: 100%;
-    position: absolute;
-    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
@@ -76,4 +77,52 @@ img{
     opacity: 15%;
     margin-right: 0.8rem;
     
+    
 }
+
+.login-box{
+    width: 33%;
+    height: 55%;
+    background-color: white;
+    margin-right: 4rem;
+    border-radius: 0.3rem;
+    margin-bottom: 4rem;
+
+}
+
+
+.login-part1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.part1-text{
+    color: #DCCF92;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+
+.part1-button{
+    border: none;
+    outline: none;
+    background-color: white;
+    opacity: 25%;
+    font-size: 0.8rem;
+    margin-right: 0.8rem;
+    margin-top: 0.5rem;
+    
+}
+
+.part1-button:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+
+
+
+
+
